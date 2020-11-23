@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TRANSPOREXA.Asistencia">
+    <ContentPage.Content>
+        <StackLayout>
+			<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+				<Label Text="Asistencia" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+			</Frame>
+			<Label Text="" HorizontalTextAlignment="Center" x:Name="lblID"  FontSize="36" IsVisible="false"/>
+
+			<Label Text="Fecha Actual" HorizontalTextAlignment="Center"  FontSize="20" />			
+			<Label Text="" HorizontalTextAlignment="Center" x:Name="lblFecha"  FontSize="20" />
+			
+			<Label Text="   " HorizontalTextAlignment="Center"   FontSize="15"/>
+
+			<Label Text="Evento" HorizontalTextAlignment="Center"  FontSize="20" />
+			<Picker x:Name="evento"></Picker>
+
+			<Label Text="   " HorizontalTextAlignment="Center"   FontSize="15"/>
+
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+				</Grid.RowDefinitions>			
+				<Grid.ColumnDefinitions>					
+				    <ColumnDefinition/>
+					<ColumnDefinition/>
+				 </Grid.ColumnDefinitions>
+			       <Button Grid.Row="0" Grid.Column="0" x:Name="btnGuardar" Text="Registrar" Clicked="btnGuardar_Clicked" BackgroundColor="#0D9441"></Button>
+				<Button Grid.Row="0" Grid.Column="1" x:Name="btnCancelar" Text="Cancelar" Clicked="btnCancelar_Clicked" BackgroundColor="#0D9441"></Button>
+			 </Grid>
+
+
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

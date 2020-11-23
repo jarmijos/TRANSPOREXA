@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TRANSPOREXA.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+			<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+				<Label Text="Registro de Asistencia" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+			</Frame>
+			<Label Text="" HorizontalTextAlignment="Center" x:Name="lblID"  FontSize="36" IsVisible="false"/>
+
+			<Button x:Name="btnAsistencia" Text="Registrar Asistencia" Clicked="btnAsistencia_Clicked" BackgroundColor="#0D9441"></Button>
+
+			<Label Text="   " HorizontalTextAlignment="Center"   FontSize="15"/>
+			
+			<Button x:Name="btnHistorial" Text="Historial Asistencia" Clicked="btnHistorial_Clicked" BackgroundColor="#0D9441"></Button>
+
+			<Label Text="   " HorizontalTextAlignment="Center"   FontSize="15"/>
+			
+			<Button x:Name="btnPermiso" Text="Solicitar Permiso" Clicked="btnPermiso_Clicked" BackgroundColor="#0D9441"></Button>
+
+			<Label Text="   " HorizontalTextAlignment="Center"   FontSize="15"/>
+			
+			<Button x:Name="btnAtrasos" Text="Salir" Clicked="btnAtrasos_Clicked" BackgroundColor="#0D9441"></Button>
+
+
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

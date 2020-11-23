@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TRANSPOREXA.VerAsistencia">
+    <ContentPage.Content>
+      
+			<StackLayout>
+				<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+					<Label Text="Ver Asistencia" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+				</Frame>
+				<Label Text="" HorizontalTextAlignment="Center" x:Name="lblID"  FontSize="36" IsVisible="false"/>
+ 
+				<Label Text="" HorizontalTextAlignment="Center"   FontSize="15"/>
+
+				<Label Text="Fecha" HorizontalTextAlignment="Center"  FontSize="20" />
+				<DatePicker x:Name="fecha"  ></DatePicker>
+
+				<Label Text="   " HorizontalTextAlignment="Center"   FontSize="15"/>
+
+			
+				
+			<Label Text="" HorizontalTextAlignment="Center" x:Name="lblResultado"  FontSize="20" /> 
+
+				<Label Text="   " HorizontalTextAlignment="Center"   FontSize="15"/>
+
+				<ListView x:Name="datosAsistencia">
+					
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<ViewCell>
+								<StackLayout>
+								 
+									<Label x:Name="lblFecha" Text="{Binding fecha}"></Label> 
+								</StackLayout>
+							</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+					
+				</ListView>
+			<Button Grid.Row="0" Grid.Column="0" x:Name="btnBuscar" Text="Buscar" Clicked="btnBuscar_Clicked" BackgroundColor="#0D9441"></Button>
+			<Button Grid.Row="0" Grid.Column="1" x:Name="btnCancelar" Text="Cancelar" Clicked="btnCancelar_Clicked_1" BackgroundColor="#0D9441"></Button>
+			<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					
+				</Grid>
+	 
+
+		</StackLayout>
+	
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TRANSPOREXA.MainPage">
+
+    <StackLayout>
+		<Image Source="https://coimpexa.com/img/coimpexa-servicios-logisticos.png" AnchorX="2" AnchorY="2" />
+		<Label Text="Inicio de Sesión"
+               HorizontalTextAlignment="Center" TextColor="Black" FontSize="25">
+		</Label>
+		<Entry x:Name="txtUser"   Placeholder="Usuario"></Entry>
+		<Entry x:Name="txtPass"  IsPassword="True" Placeholder="Contraseña"></Entry>
+
+		<Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked" BackgroundColor="Green"></Button>
+
+		<Label Text="" x:Name="valor"
+               HorizontalTextAlignment="Center" TextColor="Black" FontSize="40">
+		</Label>
+
+	</StackLayout>
+
+</ContentPage>
